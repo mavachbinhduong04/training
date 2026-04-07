@@ -148,7 +148,7 @@ export const SCANNERS: Scanner[] = [
     specialFeatures: ['IP52', 'Rơi 1.8m'],
     stock: 18,
     isPriority: true,
-    imageUrl: '',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/zebra-ds8108-9142.jpg',
     warranty: '12 tháng',
     unit: 'Cái',
     accessories: ['Cáp USB']
@@ -281,7 +281,7 @@ export const SCANNERS: Scanner[] = [
     cpu: '',
     stock: 16,
     isPriority: true,
-    imageUrl: '',
+    imageUrl: 'https://binhduongbarcode.com/upload/elfinder/idata-T1-Pro%20%283%29.JPEG',
     warranty: '',
     unit: 'Cái',
     accessories: ['Cụ sạc', 'Cáp']
