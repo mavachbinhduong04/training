@@ -6,7 +6,7 @@ export const SCANNERS: Scanner[] = [
   {
     id: 'syble-xb-d40',
     name: 'Syble XB-D40',
-    brand: 'Syble',
+    brand: 'syble',
     type: 'Máy quét 1D/2D có dây',
     retailPrice: '1.206.000',
     dealerPrice: '960.000',
@@ -31,7 +31,7 @@ export const SCANNERS: Scanner[] = [
   {
     id: 'mobydata-vs100-vga',
     name: 'Mobydata VS100 VGA',
-    brand: 'Mobydata',
+    brand: 'mobydata',
     type: 'Máy quét 2D có dây',
     retailPrice: '1.180.000',
     dealerPrice: '975.000',
@@ -56,7 +56,7 @@ export const SCANNERS: Scanner[] = [
   {
     id: 'syble-xb-6208rb',
     name: 'Syble XB-6208RB',
-    brand: 'Syble',
+    brand: 'syble',
     type: 'Máy quét 2D không dây',
     retailPrice: '1.710.000',
     dealerPrice: '1.485.000',
