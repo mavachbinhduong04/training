@@ -78,7 +78,7 @@ export default function App() {
       <main className={`flex-1 transition-all duration-300 ${isSidebarOpen ? 'ml-64' : 'ml-20'}`}>
         <Header />
 
-        <div className="p-8 max-w-[1600px] mx-auto">
+        <div className="p-8 max-w-[1650px] mx-auto">
           {renderContent()}
         </div>
       </main>
