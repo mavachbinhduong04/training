@@ -95,6 +95,8 @@ export const Scanners: React.FC<ScannersProps> = ({ setSelectedProduct }) => {
           <option value="Zebra">Zebra</option>
           <option value="Honeywell">Honeywell</option>
           <option value="iData">iData</option>
+          <option value="syble">Syble</option>
+          <option value="mobydata">MobyData</option>
         </select>
 
         <select 
