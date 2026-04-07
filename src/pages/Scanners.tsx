@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Filter, Wifi, Maximize, Smartphone, Star, Package, Info, CheckCircle2, AlertCircle, Search } from 'lucide-react';
+import { Filter, Wifi, Maximize, Smartphone, Star, Package, Info, AlertCircle, Search } from 'lucide-react';
 import { SCANNERS } from '../data';
 import { Scanner } from '../types';
 import { checkPriceRange } from '../lib/utils';
@@ -15,7 +15,8 @@ export const Scanners: React.FC<ScannersProps> = ({ setSelectedProduct }) => {
     pda: false,
     brand: 'All',
     priceRange: 'All',
-    accessory: 'All'
+    accessory: 'All',
+    stockStatus: 'All' // ✅ Thêm bộ lọc tồn kho
   });
 
   const allAccessories = Array.from(new Set(SCANNERS.flatMap(s => s.accessories || []))).sort();
@@ -28,6 +29,12 @@ export const Scanners: React.FC<ScannersProps> = ({ setSelectedProduct }) => {
     if (filters.brand !== 'All' && s.brand !== filters.brand) return false;
     if (!checkPriceRange(s.retailPrice, filters.priceRange)) return false;
     if (filters.accessory !== 'All' && !s.accessories?.includes(filters.accessory)) return false;
+    
+    // ✅ Logic lọc tồn kho
+    if (filters.stockStatus === 'InStock' && s.stock <= 0) return false;
+    if (filters.stockStatus === 'LowStock' && (s.stock <= 0 || s.stock >= 10)) return false;
+    if (filters.stockStatus === 'OutOfStock' && s.stock > 0) return false;
+    
     return true;
   });
 
@@ -95,8 +102,8 @@ export const Scanners: React.FC<ScannersProps> = ({ setSelectedProduct }) => {
           <option value="Zebra">Zebra</option>
           <option value="Honeywell">Honeywell</option>
           <option value="iData">iData</option>
-          <option value="syble">Syble</option>
-          <option value="mobydata">MobyData</option>
+          <option value="Syble">Syble</option>
+          <option value="Mobydata">Mobydata</option>
         </select>
 
         <select 
@@ -109,6 +116,18 @@ export const Scanners: React.FC<ScannersProps> = ({ setSelectedProduct }) => {
           <option value="2M - 5M">2 - 5 triệu</option>
           <option value="5M - 10M">5 - 10 triệu</option>
           <option value="Over 10M">Trên 10 triệu</option>
+        </select>
+
+        {/* ✅ Dropdown lọc tồn kho */}
+        <select 
+          value={filters.stockStatus}
+          onChange={(e) => setFilters(prev => ({ ...prev, stockStatus: e.target.value }))}
+          className="bg-slate-100 text-slate-600 px-3 py-1.5 rounded-lg text-sm border-none focus:ring-2 focus:ring-blue-200"
+        >
+          <option value="All">Tất cả tồn kho</option>
+          <option value="InStock">Còn hàng (&gt;0)</option>
+          <option value="LowStock">Sắp hết (&lt;10)</option>
+          <option value="OutOfStock">Hết hàng (0)</option>
         </select>
 
         <select 
@@ -191,8 +210,8 @@ export const Scanners: React.FC<ScannersProps> = ({ setSelectedProduct }) => {
                     </div>
                   </td>
                   <td className="p-4">
-                    <div className="flex items-center gap-1 text-sm font-medium text-slate-700">
-                      <Package size={14} className="text-blue-500" /> {s.stock}
+                    <div className={`flex items-center gap-1 text-sm font-medium ${s.stock === 0 ? 'text-red-600' : s.stock < 10 ? 'text-amber-600' : 'text-slate-700'}`}>
+                      <Package size={14} /> {s.stock}
                     </div>
                   </td>
                   <td className="p-4">
@@ -231,7 +250,13 @@ export const Scanners: React.FC<ScannersProps> = ({ setSelectedProduct }) => {
                   <Star size={10} fill="currentColor" /> ƯU TIÊN
                 </div>
               )}
-              <div className="absolute top-3 right-3 bg-white/80 backdrop-blur-sm text-slate-600 text-[10px] font-bold px-2 py-1 rounded-full flex items-center gap-1 border border-slate-100">
+              <div className={`absolute top-3 right-3 backdrop-blur-sm text-[10px] font-bold px-2 py-1 rounded-full flex items-center gap-1 border shadow-sm ${
+                s.stock === 0 
+                  ? 'bg-red-100 text-red-700 border-red-200' 
+                  : s.stock < 10 
+                    ? 'bg-amber-100 text-amber-700 border-amber-200' 
+                    : 'bg-white/80 text-slate-600 border-slate-100'
+              }`}>
                 <Package size={10} /> KHO: {s.stock}
               </div>
             </div>
