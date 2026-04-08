@@ -210,7 +210,7 @@ export const Scanners: React.FC<ScannersProps> = ({ setSelectedProduct }) => {
                     </div>
                   </td>
                   <td className="p-4">
-                    <div className={`flex items-center gap-1 text-sm font-medium ${s.stock === 0 ? 'text-red-600' : s.stock < 10 ? 'text-amber-600' : 'text-slate-700'}`}>
+                    <div className={`flex items-center gap-1 text-sm font-medium ${s.stock === 0 ? 'text-red-600' : s.stock < 10 ? 'text-amber-600' : 'text-green-600'}`}>
                       <Package size={14} /> {s.stock}
                     </div>
                   </td>
@@ -255,7 +255,7 @@ export const Scanners: React.FC<ScannersProps> = ({ setSelectedProduct }) => {
                   ? 'bg-red-100 text-red-700 border-red-200' 
                   : s.stock < 10 
                     ? 'bg-amber-100 text-amber-700 border-amber-200' 
-                    : 'bg-white/80 text-slate-600 border-slate-100'
+                    : 'bg-white/80 text-slate-600 border-green-200'
               }`}>
                 <Package size={10} /> KHO: {s.stock}
               </div>
