@@ -14,7 +14,7 @@ export const SCANNERS: Scanner[] = [
     durability: 'IP52 (Rơi 1.8m)',
     distance: 'Tầm gần tiêu chuẩn',
     application: 'Điểm bán hàng, Kiểm kê',
-    pros: ['Độ chính xác tuyệt vời', 'Phản hồi rung', 'Thiết kế bền bỉ'],
+    pros: ['Độ chính xác tuyệt vời', 'Cáp dài 3m', 'Thiết kế bền bỉ'],
     cons: ['Dây cáp dài 2m'],
     isWireless: false,
     isLongRange: false,
