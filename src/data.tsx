@@ -629,7 +629,7 @@ export const PRINTER_ACCESSORIES: PrinterAccessory[] = [
     id: 'ph-203-hprt',
     name: 'Đầu in nhiệt HPRT Gala 203 DPI',
     category: 'Đầu in',
-    compatibility: ['HPRT HT800', 'HPRT HT830', 'HPRT Gala (203DPI)', 'HPRT Gala (300DPI)'],
+    compatibility: ['HPRT Gala (203DPI)', 'HPRT Gala (300DPI)'],
     price: 'Báo giá',
     stock: 5,
     description: 'Đầu in nhiệt thay thế phù hợp cho máy in HPRT Gala.',
@@ -652,7 +652,7 @@ export const PRINTER_ACCESSORIES: PrinterAccessory[] = [
     category: 'Cơ khí',
     compatibility: ['Zebra ZT411 203dpi'],
     price: '.',
-    stock: 22,
+    stock: 12,
     description: 'Con lăn ép mực chính hãng, đảm bảo độ bám và ổn định khi in liên tục.',
     imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/truc-lan-zebra-zt411-8190.png'
   },
