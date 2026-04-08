@@ -589,7 +589,7 @@ export const PRINTERS: BarcodePrinter[] = [
     isDirectThermal: true,
     stock:0,
     isPriority: true,
-    imageUrl: '.',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/53761mayintemnhanmavachzebrazd230203dpi1-600x700-5151.jpg',
     connectivity: 'USB (Tùy chọn Ethernet)',
     warranty: '12 tháng',
     unit: 'Cái',
