@@ -721,7 +721,7 @@ export const RIBBONS: Ribbon[] = [
     material: 'Decal thường, decal bán cảm nhiệt',
     application: 'Vận chuyển, Kiểm kho, Bán lẻ',
     priceRange: 'Thấp',
-    imageUrl: 'https://picsum.photos/seed/mw105/400/300',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/untitled-design-4-2807.png',
     unit: 'Cuộn',
     notes: 'Hàng có sẵn'
   },
@@ -752,7 +752,7 @@ export const RIBBONS: Ribbon[] = [
     material: 'Decal thường, decal bán cảm nhiệt',
     application: 'Bán lẻ, Vận chuyển chất lượng cao',
     priceRange: 'Thấp',
-    imageUrl: 'https://picsum.photos/seed/mp108/400/300',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/untitled-design-4-2807.png',
     unit: 'Cuộn',
     notes: 'Hàng có sẵn'
   },
@@ -783,7 +783,7 @@ export const RIBBONS: Ribbon[] = [
     material: 'Decal thường, decal bán cảm nhiệt, decal PVC mờ',
     application: 'Nhãn hóa chất, Ngoài trời',
     priceRange: 'Trung bình',
-    imageUrl: 'https://picsum.photos/seed/hr621/400/300',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/untitled-design-4-2807.png',
     unit: 'Cuộn',
     notes: 'Hàng có sẵn'
   },
@@ -814,7 +814,7 @@ export const RIBBONS: Ribbon[] = [
     material: 'Decal thường, decal bán cảm nhiệt, decal PVC mờ, PVC bóng',
     application: 'Nhãn sản phẩm cao cấp',
     priceRange: 'Trung bình',
-    imageUrl: 'https://picsum.photos/seed/hr623/400/300',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/untitled-design-4-2807.png',
     unit: 'Cuộn',
     notes: 'Hàng có sẵn'
   },
@@ -845,7 +845,7 @@ export const RIBBONS: Ribbon[] = [
     material: 'Decal thường, decal bán cảm nhiệt, decal PVC mờ',
     application: 'Chuyên dùng trong kho lạnh',
     priceRange: 'Trung bình',
-    imageUrl: 'https://picsum.photos/seed/hr629/400/300',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/untitled-design-4-2807.png',
     unit: 'Cuộn',
     notes: 'Hàng có sẵn'
   },
@@ -876,7 +876,7 @@ export const RIBBONS: Ribbon[] = [
     material: 'Decal PVC mờ, PVC bóng và xi bạc mờ (Silver)',
     application: 'Điện tử, Ô tô, Môi trường khắc nghiệt',
     priceRange: 'Cao',
-    imageUrl: 'https://picsum.photos/seed/br180/400/300',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/untitled-design-4-2807.png',
     unit: 'Cuộn',
     notes: 'Hàng có sẵn'
   },
@@ -907,7 +907,7 @@ export const RIBBONS: Ribbon[] = [
     material: 'Decal PVC mờ, PVC bóng và xi bạc mờ (Silver)',
     application: 'Công nghiệp nặng, Điện tử',
     priceRange: 'Cao',
-    imageUrl: 'https://picsum.photos/seed/br301/400/300',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/untitled-design-4-2807.png',
     unit: 'Cuộn',
     notes: 'Hàng có sẵn'
   },
@@ -938,7 +938,7 @@ export const RIBBONS: Ribbon[] = [
     material: 'Decal PVC mờ, PVC bóng và xi bạc mờ (Silver)',
     application: 'Ngành hóa chất, xăng dầu',
     priceRange: 'Cao',
-    imageUrl: 'https://picsum.photos/seed/sr305/400/300',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/untitled-design-4-2807.png',
     unit: 'Cuộn',
     notes: 'Hàng có sẵn'
   },
@@ -969,7 +969,7 @@ export const RIBBONS: Ribbon[] = [
     material: 'Ruban vải ngành may mặc, nhãn vải, decal vải',
     application: 'Ngành may mặc, thời trang',
     priceRange: 'Cao',
-    imageUrl: 'https://picsum.photos/seed/cr150/400/300',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/untitled-design-4-2807.png',
     unit: 'Cuộn',
     notes: 'Hàng có sẵn'
   },
@@ -1000,7 +1000,7 @@ export const RIBBONS: Ribbon[] = [
     material: 'Decal thường, decal PVC mờ',
     application: 'Nhãn màu trang trí, phân loại',
     priceRange: 'Trung bình',
-    imageUrl: 'https://picsum.photos/seed/h210g/400/300',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/untitled-design-4-2807.png',
     unit: 'Cuộn',
     notes: 'Hàng có sẵn'
   },
@@ -1031,7 +1031,7 @@ export const RIBBONS: Ribbon[] = [
     material: 'Decal thường, decal PVC mờ',
     application: 'Nhãn màu trang trí, phân loại',
     priceRange: 'Trung bình',
-    imageUrl: 'https://picsum.photos/seed/h210b/400/300',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/untitled-design-4-2807.png',
     unit: 'Cuộn',
     notes: 'Hàng có sẵn'
   },
@@ -1062,7 +1062,7 @@ export const RIBBONS: Ribbon[] = [
     material: 'Decal thường, decal PVC mờ',
     application: 'Nhãn màu trang trí, phân loại',
     priceRange: 'Trung bình',
-    imageUrl: 'https://picsum.photos/seed/h210r/400/300',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/untitled-design-4-2807.png',
     unit: 'Cuộn',
     notes: 'Hàng có sẵn'
   },
@@ -1093,7 +1093,7 @@ export const RIBBONS: Ribbon[] = [
     material: 'Decal thường, decal PVC mờ',
     application: 'Nhãn màu trang trí, phân loại',
     priceRange: 'Trung bình',
-    imageUrl: 'https://picsum.photos/seed/h210y/400/300',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/untitled-design-4-2807.png',
     unit: 'Cuộn',
     notes: 'Hàng có sẵn'
   },
@@ -1124,7 +1124,7 @@ export const RIBBONS: Ribbon[] = [
     material: 'Decal thường, decal PVC mờ',
     application: 'Nhãn màu trang trí, phân loại',
     priceRange: 'Trung bình',
-    imageUrl: 'https://picsum.photos/seed/h210br/400/300',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/untitled-design-4-2807.png',
     unit: 'Cuộn',
     notes: 'Hàng có sẵn'
   },
@@ -1155,7 +1155,7 @@ export const RIBBONS: Ribbon[] = [
     material: 'Màng OPP bóng, máy in ngày sản xuất',
     application: 'In date, hạn sử dụng trên bao bì',
     priceRange: 'Trung bình',
-    imageUrl: 'https://picsum.photos/seed/dr70/400/300',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/untitled-design-4-2807.png',
     unit: 'Cuộn',
     notes: 'Hàng có sẵn'
   }
@@ -1179,9 +1179,9 @@ export const LESSONS: Lesson[] = [
     description: 'Tư vấn khách hàng dựa trên nhu cầu thực tế.',
     icon: <Search className="w-6 h-6" />,
     content: [
-      'Môi trường: Nếu kho bãi bụi bặm, chọn IP65 trở lên.',
-      'Khoảng cách: Nếu quét kệ cao, chọn máy quét tầm xa (Long Range).',
-      'Loại mã: Nếu quét mã trên màn hình điện thoại, bắt buộc dùng máy quét 2D chuyên dụng (2D Imager).'
+      '- Môi trường: Nếu kho bãi bụi bặm, chọn IP65 trở lên.',
+      '- Khoảng cách: Nếu quét kệ cao, chọn máy quét tầm xa (Long Range).',
+      '- Loại mã: Nếu quét mã trên màn hình điện thoại, bắt buộc dùng máy quét 2D chuyên dụng (2D Imager).'
     ]
   },
   {
