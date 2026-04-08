@@ -21,7 +21,7 @@ export const SCANNERS: Scanner[] = [
     sensorResolution: '1280 x 800 pixels',
     isPDA: false,
     specialFeatures: ['IP52', 'cáp dài 2m'],
-    stock: 20,
+    stock: 47,
     isPriority: true,
     imageUrl: 'https://binhduongbarcode.com/upload/elfinder/IMG_0950.png',
     warranty: '12 tháng',
