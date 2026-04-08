@@ -78,6 +78,33 @@ export const SCANNERS: Scanner[] = [
     unit: 'Cái',
     accessories: ['Cáp USB']
   },
+   {
+    id: 'idata-k3s',
+    name: 'iData K3S',
+    brand: 'iData',
+    type: 'PDA / Máy kiểm kho',
+    retailPrice: '6.390.000 VNĐ',
+    dealerPrice: '5.850.000 VNĐ',
+    speed: 'Octa-core 2.0 GHz',
+    durability: 'IP65',
+    distance: 'Tầm gần tiêu chuẩn',
+    application: 'Logistics, Kho bãi',
+    pros: ['Bàn phím cứng bền bỉ', 'Hiệu suất cao', 'Giá PDA cạnh tranh'],
+    cons: ['Nặng hơn điện thoại thông thường'],
+    isWireless: true,
+    isLongRange: false,
+    sensorResolution: '8MP Camera',
+    isPDA: true,
+    specialFeatures: ['IP65', 'Bàn phím'],
+    screenSize: '4.0 inch',
+    ram: '4GB/64GB',
+    cpu: 'Octa-core 2.0GHz',
+    stock: 18,
+    isPriority: true,
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/idata-k3s-8056.png',
+    warranty: '12 tháng',
+    unit: 'Cái'
+  }
   {
     id: 'syble-xb-d40',
     name: 'Syble XB-D40',
@@ -231,7 +258,6 @@ export const SCANNERS: Scanner[] = [
     unit: 'Cái',
     accessories: ['Tay cầm (Trigger)', 'Pin dự phòng']
   },
-  
   {
     id: 'honeywell-eda52',
     name: 'Honeywell EDA52',
@@ -371,33 +397,6 @@ export const SCANNERS: Scanner[] = [
     unit: 'Cái',
     accessories: ['Cụ sạc', 'Cáp'],
   },
-  {
-    id: 'idata-k3s',
-    name: 'iData K3S',
-    brand: 'iData',
-    type: 'PDA / Máy kiểm kho',
-    retailPrice: '6.390.000 VNĐ',
-    dealerPrice: '5.850.000 VNĐ',
-    speed: 'Octa-core 2.0 GHz',
-    durability: 'IP65',
-    distance: 'Tầm gần tiêu chuẩn',
-    application: 'Logistics, Kho bãi',
-    pros: ['Bàn phím cứng bền bỉ', 'Hiệu suất cao', 'Giá PDA cạnh tranh'],
-    cons: ['Nặng hơn điện thoại thông thường'],
-    isWireless: true,
-    isLongRange: false,
-    sensorResolution: '8MP Camera',
-    isPDA: true,
-    specialFeatures: ['IP65', 'Bàn phím'],
-    screenSize: '4.0 inch',
-    ram: '4GB/64GB',
-    cpu: 'Octa-core 2.0GHz',
-    stock: 18,
-    isPriority: true,
-    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/idata-k3s-8056.png',
-    warranty: '12 tháng',
-    unit: 'Cái'
-  }
 ];
 
 export const PRINTERS: BarcodePrinter[] = [
