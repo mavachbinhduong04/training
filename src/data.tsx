@@ -209,7 +209,7 @@ export const SCANNERS: Scanner[] = [
     cpu: 'Qualcomm™ 5430 hex-core, 2.1 GHz ',
     stock: 0,
     isPriority: true,
-    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/may-kiem-kho-di-dong-pda-honeywell-eda52-6854.png',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/tc22-tc27-photography-product-right-facing-with-shadow-3x2-3600-4305.jpg',
     warranty: '12 tháng',
     unit: 'Cái'
   },
@@ -284,9 +284,9 @@ export const SCANNERS: Scanner[] = [
     sensorResolution: '',
     isPDA: false,
     specialFeatures: ['Bluetooth', 'USB', 'IP52'],
-    stock: 0,
+    stock: 01,
     isPriority: false,
-    imageUrl: '',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/zebra-ds8178-5057.png',
     warranty: '12 tháng',
     unit: 'Cái',
     accessories: ['Chân đế', 'Dây cáp']
@@ -319,7 +319,6 @@ export const SCANNERS: Scanner[] = [
     unit: 'Cái',
     accessories: ['Tay cầm (Trigger)', 'Pin dự phòng']
   },
-
   {
     id: 'mobydata-v31',
     name: 'Mobydata V31 (M71)',
