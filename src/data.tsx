@@ -625,7 +625,7 @@ export const PRINTER_ACCESSORIES: PrinterAccessory[] = [
     name: 'Trục lăn',
     category: 'Cơ khí',
     compatibility: ['Zebra ZT411 203dpi'],
-    price: '650.000 VNĐ',
+    price: '.',
     stock: 22,
     description: 'Con lăn ép mực chính hãng, đảm bảo độ bám và ổn định khi in liên tục.',
     imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/truc-lan-zebra-zt411-8190.png'
