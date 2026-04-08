@@ -4,29 +4,29 @@ import { Scanner, BarcodePrinter, Ribbon, Lesson, PrinterAccessory } from './typ
 
 export const SCANNERS: Scanner[] = [
   {
-    id: 'honeywell-1950g',
-    name: 'Honeywell Xenon XP 1950g',
+    id: 'honeywell-1950ghd',
+    name: 'Honeywell 1950GHD',
     brand: 'Honeywell',
     type: 'Máy quét 2D',
     retailPrice: '4.800.000 VNĐ',
     dealerPrice: '4.200.000 VNĐ',
     speed: 'Cực cao',
-    durability: 'IP41 (Rơi 1.8m)',
+    durability: 'IP52 (Rơi 1.8m)',
     distance: 'Tầm gần tiêu chuẩn',
     application: 'Điểm bán hàng, Kiểm kê',
     pros: ['Độ chính xác tuyệt vời', 'Phản hồi rung', 'Thiết kế bền bỉ'],
-    cons: ['Dây cáp có thể hơi cứng'],
+    cons: ['Dây cáp dài 2m'],
     isWireless: false,
     isLongRange: false,
     sensorResolution: '1280 x 800 pixels',
     isPDA: false,
-    specialFeatures: ['IP41', 'Rơi 1.8m'],
+    specialFeatures: ['IP52', 'cáp dài 2m'],
     stock: 20,
     isPriority: true,
     imageUrl: 'https://binhduongbarcode.com/upload/elfinder/IMG_0950.png',
     warranty: '12 tháng',
     unit: 'Cái',
-    accessories: ['Cáp USB', 'Chân đế']
+    accessories: ['Cáp USB']
   },
   {
     id: 'syble-xb-d40',
