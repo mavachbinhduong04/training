@@ -596,7 +596,7 @@ export const PRINTER_ACCESSORIES: PrinterAccessory[] = [
     category: 'Cáp kết nối',
     compatibility: ['HPRT HT800', 'HPRT HT830', 'HPRT Gala (203DPI)', 'HPRT Gala (300DPI)', 'Zebra ZD230'],
     price: '150.000 VNĐ',
-    stock: 120,
+    stock: 12,
     description: 'Cáp chuẩn USB 2.0 A-B dành cho máy in mã vạch để bàn.',
     imageUrl: 'https://picsum.photos/seed/usb2/400/300'
   },
@@ -620,16 +620,7 @@ export const PRINTER_ACCESSORIES: PrinterAccessory[] = [
     description: 'Bộ cảm biến giúp máy in nhận diện giấy và cuộn tem chính xác hơn.',
     imageUrl: 'https://picsum.photos/seed/sensor/400/300'
   },
-  {
-    id: 'label-roll-110',
-    name: 'Cuộn nhãn 110mm x 50m',
-    category: 'Vật tư',
-    compatibility: ['HPRT HT800', 'HPRT HT830', 'HPRT Gala (203DPI)', 'HPRT Gala (300DPI)', 'Zebra ZD230'],
-    price: '95.000 VNĐ',
-    stock: 90,
-    description: 'Cuộn tem decal trắng 110mm phù hợp cho đa số máy in mã vạch để bàn.',
-    imageUrl: 'https://picsum.photos/seed/label110/400/300'
-  }
+
 ];
 
 export const RIBBONS: Ribbon[] = [
