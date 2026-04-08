@@ -184,7 +184,7 @@ export const Printers: React.FC<PrintersProps> = ({ setSelectedProduct }) => {
                     {p.isDirectThermal ? (
                       <span className="text-[10px] bg-green-50 text-green-600 px-1.5 py-0.5 rounded font-bold uppercase">Có</span>
                     ) : (
-                      <span className="text-[10px] bg-slate-50 text-slate-400 px-1.5 py-0.5 rounded font-bold uppercase">Không</span>
+                      <span className="text-[10px] bg-slate-50 text-slate-400 px-1.5 py-0.5 rounded font-bold uppercase">Có</span>
                     )}
                   </td>
                   <td className="p-4 text-sm text-slate-500 italic">{p.volume}</td>
