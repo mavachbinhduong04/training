@@ -581,34 +581,34 @@ export const PRINTERS: BarcodePrinter[] = [
 export const PRINTER_ACCESSORIES: PrinterAccessory[] = [
   {
     id: 'ph-203-hprt',
-    name: 'Đầu in nhiệt HPRT 203 DPI',
+    name: 'Đầu in nhiệt HPRT Gala 203 DPI',
     category: 'Đầu in',
     compatibility: ['HPRT HT800', 'HPRT HT830', 'HPRT Gala (203DPI)', 'HPRT Gala (300DPI)'],
-    price: '850.000 VNĐ',
-    stock: 35,
-    description: 'Đầu in nhiệt thay thế phù hợp cho máy in HPRT dòng để bàn và công nghiệp.',
-    imageUrl: 'https://picsum.photos/seed/ph203/400/300',
+    price: 'Báo giá',
+    stock: 5,
+    description: 'Đầu in nhiệt thay thế phù hợp cho máy in HPRT Gala.',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/prt-new-products-4-inch-thermal-printer-head-mechanism-pt1045-without-cutter-2-4456.jpg',
     notes: 'Thay nhanh trong 15 phút'
   },
   {
     id: 'usb-ab-2m',
     name: 'Cáp USB 2.0 A-B 2m',
     category: 'Cáp kết nối',
-    compatibility: ['HPRT HT800', 'HPRT HT830', 'HPRT Gala (203DPI)', 'HPRT Gala (300DPI)', 'Zebra ZD230'],
-    price: '150.000 VNĐ',
-    stock: 12,
-    description: 'Cáp chuẩn USB 2.0 A-B dành cho máy in mã vạch để bàn.',
-    imageUrl: 'https://picsum.photos/seed/usb2/400/300'
+    compatibility: ['Zebra DS2208'],
+    price: '. VNĐ',
+    stock: 1,
+    description: 'Cáp dành cho Zebra Ds2208.',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/day-cap-may-doc-ma-vach-zebra-ds2208-4781.jpg'
   },
   {
     id: 'platen-roller',
-    name: 'Con lăn ép mực',
+    name: 'Trục lăn',
     category: 'Cơ khí',
-    compatibility: ['HPRT Gala (203DPI)', 'HPRT Gala (300DPI)', 'Zebra ZT411', 'Zebra ZT231'],
+    compatibility: ['Zebra ZT411', 'Zebra ZT231'],
     price: '650.000 VNĐ',
     stock: 22,
     description: 'Con lăn ép mực chính hãng, đảm bảo độ bám và ổn định khi in liên tục.',
-    imageUrl: 'https://picsum.photos/seed/roller/400/300'
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/truc-lan-zebra-zt411-8190.png'
   },
   {
     id: 'sensor-kit',
