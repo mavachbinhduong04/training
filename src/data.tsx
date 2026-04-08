@@ -344,7 +344,7 @@ export const SCANNERS: Scanner[] = [
     ram: '3 GB',
     cpu: '',
     stock: 0,
-    isPriority: true,
+    isPriority: false,
     imageUrl: '',
     warranty: '',
     unit: 'Cái',
