@@ -573,7 +573,7 @@ export const PRINTERS: BarcodePrinter[] = [
     isDirectThermal: false,
     stock: 0,
     isPriority: true,
-    imageUrl: 'https://picsum.photos/seed/zt231/400/300',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/zebra-zt231-3-4436.png',
     connectivity: 'USB, Serial, Ethernet, Bluetooth',
     warranty: '12 tháng',
     unit: 'Cái',
