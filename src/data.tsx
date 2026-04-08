@@ -128,7 +128,8 @@ export const SCANNERS: Scanner[] = [
     isPriority: true,
     imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/idata-k3s-8056.png',
     warranty: '12 tháng',
-    unit: 'Cái'
+    unit: 'Cái',
+    accessories: ['Dây đeo mặt sau', 'Cáp Type C','Củ sạc',],
   },
   
   {
