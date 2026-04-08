@@ -610,16 +610,6 @@ export const PRINTER_ACCESSORIES: PrinterAccessory[] = [
     description: 'Con lăn ép mực chính hãng, đảm bảo độ bám và ổn định khi in liên tục.',
     imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/truc-lan-zebra-zt411-8190.png'
   },
-  {
-    id: 'sensor-kit',
-    name: 'Cảm biến định vị giấy',
-    category: 'Cảm biến',
-    compatibility: ['HPRT HT800', 'HPRT HT830', 'HPRT Gala (203DPI)', 'HPRT Gala (300DPI)', 'Zebra ZT411'],
-    price: '720.000 VNĐ',
-    stock: 18,
-    description: 'Bộ cảm biến giúp máy in nhận diện giấy và cuộn tem chính xác hơn.',
-    imageUrl: 'https://picsum.photos/seed/sensor/400/300'
-  },
 
 ];
 
