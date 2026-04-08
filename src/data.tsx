@@ -7,7 +7,7 @@ export const SCANNERS: Scanner[] = [
     id: 'honeywell-1950ghd',
     name: 'Honeywell 1950GHD',
     brand: 'Honeywell',
-    type: 'Máy quét 2D',
+    type: 'Máy quét 1D/2D',
     retailPrice: '4.800.000 VNĐ',
     dealerPrice: '4.200.000 VNĐ',
     speed: 'Cực cao',
