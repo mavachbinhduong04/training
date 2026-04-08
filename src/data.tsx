@@ -104,32 +104,8 @@ export const SCANNERS: Scanner[] = [
     imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/idata-k3s-8056.png',
     warranty: '12 tháng',
     unit: 'Cái'
-  }
-  {
-    id: 'syble-xb-d40',
-    name: 'Syble XB-D40',
-    brand: 'Syble',
-    type: 'Máy quét 1D/2D có dây',
-    retailPrice: '1.206.000',
-    dealerPrice: '960.000',
-    speed: '',
-    durability: '',
-    distance: '',
-    application: 'Bán lẻ, Kho hàng',
-    pros: ['Quét 1D/2D/QR', 'Bảo hành 24 tháng', 'Cáp dài 2m'],
-    cons: ['Có dây'],
-    isWireless: false,
-    isLongRange: false,
-    sensorResolution: '640 x 480 pixels',
-    isPDA: false,
-    specialFeatures: ['Quét tự động'],
-    stock: 10,
-    isPriority: true,
-    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/syble-xb-d40-8543.png',
-    warranty: '24 tháng',
-    unit: 'Cái',
-    accessories: ['Chân đế', 'Cáp USB'],
   },
+   
   {
     id: 'mobydata-vs100-vga',
     name: 'Mobydata VS100 VGA',
