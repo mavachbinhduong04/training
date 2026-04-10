@@ -38,6 +38,19 @@ export const Printers: React.FC<PrintersProps> = ({ setSelectedProduct }) => {
     return true;
   });
 
+  // Hàm xác định màu sắc dựa trên số lượng tồn kho
+  const getStockColorClass = (stock: number) => {
+    if (stock === 0) return 'text-red-600';
+    if (stock < 5) return 'text-yellow-600';
+    return 'text-green-600';
+  };
+
+  const getStockIconColorClass = (stock: number) => {
+    if (stock === 0) return 'text-red-500';
+    if (stock < 5) return 'text-yellow-500';
+    return 'text-green-500';
+  };
+
   return (
     <div className="space-y-6">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
@@ -175,9 +188,11 @@ export const Printers: React.FC<PrintersProps> = ({ setSelectedProduct }) => {
                       <span className="text-[10px] font-bold text-green-700">{p.dealerPrice}</span>
                     </div>
                   </td>
+                  {/* Cột Tồn kho có màu sắc */}
                   <td className="p-4">
-                    <div className="flex items-center gap-1 text-sm font-medium text-slate-700">
-                      <Package size={14} className="text-blue-500" /> {p.stock}
+                    <div className={`flex items-center gap-1 text-sm font-medium ${getStockColorClass(p.stock)}`}>
+                      <Package size={14} className={getStockIconColorClass(p.stock)} />
+                      {p.stock}
                     </div>
                   </td>
                   <td className="p-4">
@@ -214,8 +229,10 @@ export const Printers: React.FC<PrintersProps> = ({ setSelectedProduct }) => {
                   <Star size={10} fill="currentColor" /> ƯU TIÊN
                 </div>
               )}
-              <div className="absolute top-3 right-3 bg-white/80 backdrop-blur-sm text-slate-600 text-[10px] font-bold px-2 py-1 rounded-full flex items-center gap-1 border border-slate-100">
-                <Package size={10} /> KHO: {p.stock}
+              {/* Card: hiển thị tồn kho với màu sắc */}
+              <div className={`absolute top-3 right-3 bg-white/80 backdrop-blur-sm text-[10px] font-bold px-2 py-1 rounded-full flex items-center gap-1 border border-slate-100 ${getStockColorClass(p.stock)}`}>
+                <Package size={10} className={getStockIconColorClass(p.stock)} />
+                KHO: {p.stock}
               </div>
             </div>
             <div className="p-5">
