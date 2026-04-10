@@ -210,7 +210,7 @@ export const SCANNERS: Scanner[] = [
     cpu: 'Qualcomm™ 5430 hex-core, 2.1 GHz ',
     stock: 0,
     isPriority: true,
-    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/tc22-tc27-photography-product-right-facing-with-shadow-3x2-3600-4305.jpg',
+    imageUrl: 'https://binhduongbarcode.com/upload/elfinder/tc22-tc27-photography-product-eight-pin-front-left-facing-up-3x2-3600.jpg',
     warranty: '12 tháng',
     unit: 'Cái'
   },
