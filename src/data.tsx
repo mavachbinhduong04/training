@@ -61,7 +61,7 @@ export const SCANNERS: Scanner[] = [
     retailPrice: '4.300.000',
     dealerPrice: '3.600.000',
     speed: '',
-    durability: '',
+    durability: 'IP42',
     distance: '',
     application: 'Bán lẻ cao cấp',
     pros: ['Quét cực nhanh', 'Đọc mã vạch hỏng tốt', 'Thiết kế sang trọng'],
