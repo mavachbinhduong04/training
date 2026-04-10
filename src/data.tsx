@@ -285,7 +285,7 @@ export const SCANNERS: Scanner[] = [
     sensorResolution: '',
     isPDA: false,
     specialFeatures: ['Bluetooth', 'USB', 'IP52'],
-    stock: 01,
+    stock: 1,
     isPriority: false,
     imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/zebra-ds8178-5057.png',
     warranty: '12 tháng',
