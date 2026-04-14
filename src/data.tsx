@@ -23,7 +23,7 @@ export const SCANNERS: Scanner[] = [
     specialFeatures: ['IP52', 'cáp dài 3m'],
     stock: 47,
     isPriority: true,
-    imageUrl: 'https://binhduongbarcode.com/upload/elfinder/IMG_0950.png',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/honeywell-ghd-1950-2249.png',
     warranty: '12 tháng',
     unit: 'Cái',
     accessories: ['Cáp USB']
