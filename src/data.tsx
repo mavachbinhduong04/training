@@ -237,7 +237,7 @@ export const SCANNERS: Scanner[] = [
     cpu: '8 core 2.0 GHz',
     stock: 23,
     isPriority: true,
-    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/thiet-ke-chua-co-ten-5593.png',
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/idata-t1-uhf-rfid-reader-scaner-4918.png',
     warranty: '12 tháng',
     unit: 'Cái',
     accessories: ['Dock sạc mua riêng 32 USD', 'Dây nguồn', 'Cáp'],
