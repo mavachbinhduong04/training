@@ -155,7 +155,7 @@ export const PRINTERS: BarcodePrinter[] = [
     memory: '512 MB Flash, 256 MB SDRAM',
     accessories: ['Cáp USB', 'Đầu in thay thế', 'Hướng dẫn cài đặt'],
   },
-  
+
   {
     id: 'zebra-zt231',
     name: 'Zebra ZT231',
@@ -177,7 +177,7 @@ export const PRINTERS: BarcodePrinter[] = [
     unit: 'Cái',
     memory: '256 MB Flash, 256 MB SDRAM'
   },
-    {
+  {
     id: 'zebra-zt610',
     name: 'Zebra ZT610',
     brand: 'Zebra',
@@ -211,12 +211,35 @@ export const PRINTERS: BarcodePrinter[] = [
     application: 'Bán lẻ, Vận chuyển',
     pros: ['Giá cả phải chăng', 'Cài đặt đơn giản', 'Đáng tin cậy'],
     isDirectThermal: true,
-    stock:0,
+    stock: 0,
     isPriority: true,
     imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/53761mayintemnhanmavachzebrazd230203dpi1-600x700-5151.jpg',
     connectivity: 'USB (Tùy chọn Ethernet)',
     warranty: '12 tháng',
     unit: 'Cái',
     memory: '256 MB Flash, 128 MB SDRAM'
+  },
+  {
+    id: 'gainscha-gs3405t-plus',
+    name: 'Gainscha GS-3405T Plus',
+    brand: 'Gainscha',
+    retailPrice: ' VNĐ',
+    dealerPrice: ' VNĐ',
+    resolution: '300 DPI',
+    speed: 5,
+    width: '110mm (In 108.4mm)',
+    volume: 'Để bàn',
+    application: 'Bán lẻ, Kho bãi, Y tế',
+    pros: ['Độ phân giải 300 DPI sắc nét', 'Bộ nhớ lớn (128MB SDRAM)', 'Giá thành hợp lý'],
+    isDirectThermal: false,
+    stock: 5,
+    isPriority: true,
+    imageUrl: 'https://binhduongbarcode.com/thumbs/540x540x1/upload/product/may-in-ma-vach-gainscha-gs3405t-plus31203.png',
+    connectivity: 'USB 2.0, Ethernet & Serial',
+    warranty: '12 tháng',
+    unit: 'Cái',
+    memory: '128 MB flash, 128 MB SDRAM',
+    accessories: ['Cáp USB 2.0', 'Adapter nguồn', 'Hướng dẫn sử dụng'],
+    notes: 'Hàng có sẵn'
   },
 ];
