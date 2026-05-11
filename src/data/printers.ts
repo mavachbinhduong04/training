@@ -263,6 +263,6 @@ export const PRINTERS: BarcodePrinter[] = [
     unit: 'Cái',
     memory: '4 MB Flash, 8 MB SDRAM',
     accessories: ['Pin sạc', 'Adapter sạc', 'Móc cài lưng'],
-    notes: 'Bảo hành đầu in 6 tháng'
+    notes: 'Bảo hành Liên hệ'
   },
 ];
