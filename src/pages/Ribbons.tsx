@@ -2,12 +2,29 @@ import React, { useState } from 'react';
 import { RIBBONS } from '../data';
 import { Filter, Search, Tag, Info, CheckCircle2, ChevronRight, Package, Star } from 'lucide-react';
 
-export const Ribbons: React.FC = () => {
+interface RibbonsProps {
+  searchQuery: string;
+}
+
+export const Ribbons: React.FC<RibbonsProps> = ({ searchQuery }) => {
   const [typeFilter, setTypeFilter] = useState('All');
   const [adhesionFilter, setAdhesionFilter] = useState('All');
   const [materialFilter, setMaterialFilter] = useState('All');
 
   const filteredRibbons = RIBBONS.filter(r => {
+    // Global search filter
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase();
+      const matchesSearch = 
+        r.name.toLowerCase().includes(query) || 
+        r.sku.toLowerCase().includes(query) || 
+        r.type.toLowerCase().includes(query) ||
+        r.material.toLowerCase().includes(query) ||
+        r.application.toLowerCase().includes(query);
+      
+      if (!matchesSearch) return false;
+    }
+
     const matchesType = typeFilter === 'All' || r.type === typeFilter;
     const matchesAdhesion = adhesionFilter === 'All' || r.adhesion?.includes(adhesionFilter);
     

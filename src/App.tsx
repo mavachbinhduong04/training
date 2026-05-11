@@ -27,21 +27,22 @@ export default function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [selectedProduct, setSelectedProduct] = useState<Scanner | BarcodePrinter | null>(null);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
 
   const renderContent = () => {
     switch (activeTab) {
       case 'dashboard':
         return <Dashboard setActiveTab={setActiveTab} />;
       case 'scanners':
-        return <Scanners setSelectedProduct={setSelectedProduct} />;
+        return <Scanners setSelectedProduct={setSelectedProduct} searchQuery={searchQuery} />;
       case 'printers':
-        return <Printers setSelectedProduct={setSelectedProduct} />;
+        return <Printers setSelectedProduct={setSelectedProduct} searchQuery={searchQuery} />;
       case 'printerAccessories':
-        return <PrinterAccessories />;
+        return <PrinterAccessories searchQuery={searchQuery} />;
       case 'ribbons':
-        return <Ribbons />;
+        return <Ribbons searchQuery={searchQuery} />;
       case 'training':
-        return <Training />;
+        return <Training searchQuery={searchQuery} />;
       default:
         return <Dashboard setActiveTab={setActiveTab} />;
     }
@@ -76,7 +77,7 @@ export default function App() {
 
       {/* Main Content */}
       <main className={`flex-1 transition-all duration-300 ${isSidebarOpen ? 'ml-64' : 'ml-20'}`}>
-        <Header />
+        <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
 
         <div className="p-8 max-w-[1650px] mx-auto">
           {renderContent()}

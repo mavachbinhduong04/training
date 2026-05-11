@@ -3,7 +3,21 @@ import { ChevronRight } from 'lucide-react';
 import { LESSONS } from '../data';
 import { LabelCalculator } from '../components/LabelCalculator';
 
-export const Training: React.FC = () => {
+interface TrainingProps {
+  searchQuery: string;
+}
+
+export const Training: React.FC<TrainingProps> = ({ searchQuery }) => {
+  const filteredLessons = LESSONS.filter(lesson => {
+    if (!searchQuery) return true;
+    const query = searchQuery.toLowerCase();
+    return (
+      lesson.title.toLowerCase().includes(query) ||
+      lesson.description.toLowerCase().includes(query) ||
+      lesson.content.some(item => item.toLowerCase().includes(query))
+    );
+  });
+
   return (
     <div className="space-y-12">
       <div className="flex items-center justify-between">
@@ -29,7 +43,7 @@ export const Training: React.FC = () => {
           <h3 className="text-lg font-bold text-slate-800">Bài học & Kiến thức</h3>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {LESSONS.map((lesson) => (
+          {filteredLessons.map((lesson) => (
             <div 
               key={lesson.id}
               className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-all group"
@@ -54,6 +68,11 @@ export const Training: React.FC = () => {
             </div>
           ))}
         </div>
+        {filteredLessons.length === 0 && (
+          <div className="text-center py-12 bg-white rounded-xl border border-dashed border-slate-300 text-slate-400">
+            Không tìm thấy bài học nào khớp với từ khóa "{searchQuery}"
+          </div>
+        )}
       </section>
     </div>
   );

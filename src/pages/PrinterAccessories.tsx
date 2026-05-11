@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import { Filter, Wrench, Info, Package } from 'lucide-react';
 import { PRINTER_ACCESSORIES } from '../data';
 
-export const PrinterAccessories: React.FC = () => {
+interface PrinterAccessoriesProps {
+  searchQuery: string;
+}
+
+export const PrinterAccessories: React.FC<PrinterAccessoriesProps> = ({ searchQuery }) => {
   const [filters, setFilters] = useState({
     category: 'All',
     compatibility: 'All'
@@ -12,6 +16,18 @@ export const PrinterAccessories: React.FC = () => {
   const compatibilities = Array.from(new Set(PRINTER_ACCESSORIES.flatMap(item => item.compatibility))).sort();
 
   const filteredAccessories = PRINTER_ACCESSORIES.filter((item) => {
+    // Global search filter
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase();
+      const matchesSearch = 
+        item.name.toLowerCase().includes(query) || 
+        item.category.toLowerCase().includes(query) || 
+        item.description.toLowerCase().includes(query) ||
+        item.compatibility.some(c => c.toLowerCase().includes(query));
+      
+      if (!matchesSearch) return false;
+    }
+
     if (filters.category !== 'All' && item.category !== filters.category) return false;
     if (filters.compatibility !== 'All' && !item.compatibility.includes(filters.compatibility)) return false;
     return true;

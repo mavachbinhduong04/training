@@ -6,9 +6,10 @@ import { checkPriceRange } from '../lib/utils';
 
 interface ScannersProps {
   setSelectedProduct: (product: Scanner) => void;
+  searchQuery: string;
 }
 
-export const Scanners: React.FC<ScannersProps> = ({ setSelectedProduct }) => {
+export const Scanners: React.FC<ScannersProps> = ({ setSelectedProduct, searchQuery }) => {
   const [filters, setFilters] = useState({
     connectionType: 'All',
     longRange: false,
@@ -22,6 +23,19 @@ export const Scanners: React.FC<ScannersProps> = ({ setSelectedProduct }) => {
   const allAccessories = Array.from(new Set(SCANNERS.flatMap(s => s.accessories || []))).sort();
 
   const filteredScanners = SCANNERS.filter(s => {
+    // Global search filter
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase();
+      const matchesSearch = 
+        s.name.toLowerCase().includes(query) || 
+        s.brand.toLowerCase().includes(query) || 
+        s.type.toLowerCase().includes(query) ||
+        (s.isPDA && s.ram?.toLowerCase().includes(query)) ||
+        (s.isPDA && s.screenSize?.toLowerCase().includes(query));
+      
+      if (!matchesSearch) return false;
+    }
+
     if (filters.connectionType === 'Wireless' && !s.isWireless) return false;
     if (filters.connectionType === 'Wired' && s.isWireless) return false;
     if (filters.longRange && !s.isLongRange) return false;

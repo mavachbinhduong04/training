@@ -6,9 +6,10 @@ import { checkPriceRange } from '../lib/utils';
 
 interface PrintersProps {
   setSelectedProduct: (product: BarcodePrinter) => void;
+  searchQuery: string;
 }
 
-export const Printers: React.FC<PrintersProps> = ({ setSelectedProduct }) => {
+export const Printers: React.FC<PrintersProps> = ({ setSelectedProduct, searchQuery }) => {
   const [filters, setFilters] = useState({
     directThermal: false,
     speedRange: 'All',
@@ -19,6 +20,18 @@ export const Printers: React.FC<PrintersProps> = ({ setSelectedProduct }) => {
   });
 
   const filteredPrinters = PRINTERS.filter(p => {
+    // Global search filter
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase();
+      const matchesSearch = 
+        p.name.toLowerCase().includes(query) || 
+        p.brand.toLowerCase().includes(query) || 
+        p.resolution.toLowerCase().includes(query) ||
+        p.application.toLowerCase().includes(query);
+      
+      if (!matchesSearch) return false;
+    }
+
     if (filters.directThermal && !p.isDirectThermal) return false;
     
     // Speed filter
