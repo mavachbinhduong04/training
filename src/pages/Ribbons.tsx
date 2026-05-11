@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { RIBBONS } from '../data';
+import { RIBBONS } from '../data/ribbons';
 import { Filter, Search, Tag, Info, CheckCircle2, ChevronRight, Package, Star } from 'lucide-react';
 
 interface RibbonsProps {

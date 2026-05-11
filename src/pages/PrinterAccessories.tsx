@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Filter, Wrench, Info, Package } from 'lucide-react';
-import { PRINTER_ACCESSORIES } from '../data';
+import { PRINTER_ACCESSORIES } from '../data/accessories';
 
 interface PrinterAccessoriesProps {
   searchQuery: string;

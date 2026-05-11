@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Filter, Wifi, Maximize, Smartphone, Star, Package, Info, AlertCircle, Search } from 'lucide-react';
-import { SCANNERS } from '../data';
+import { SCANNERS } from '../data/scanners';
 import { Scanner } from '../types';
 import { checkPriceRange } from '../lib/utils';
 

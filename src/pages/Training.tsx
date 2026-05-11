@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
-import { LESSONS } from '../data';
+import { LESSONS } from '../data/lessons';
 import { LabelCalculator } from '../components/LabelCalculator';
 
 interface TrainingProps {

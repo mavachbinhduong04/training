@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Filter, Thermometer, Zap, Star, Package, Info, CheckCircle2, AlertCircle, Search } from 'lucide-react';
-import { PRINTERS } from '../data';
+import { PRINTERS } from '../data/printers';
 import { BarcodePrinter } from '../types';
 import { checkPriceRange } from '../lib/utils';
 
